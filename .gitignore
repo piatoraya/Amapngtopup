@@ -1,0 +1,40 @@
+# ============================================================================
+# Kredensial & konfigurasi lokal -- JANGAN PERNAH DI-COMMIT
+# ============================================================================
+library/config.local.php
+
+# Varian .htaccess untuk lokal. Yang produksi tetap di-track di repository.
+.htaccess.local
+
+# ============================================================================
+# File log / error log produksi yang berserakan di repo
+# (isinya membocorkan path asli server, mis. /home/ampangpe/public_html/...)
+# ============================================================================
+error_log
+*.log
+shenn.log
+
+# ============================================================================
+# Dump / cadangan database & berkas cadangan lain
+# ============================================================================
+*.sql
+*.bak
+*.old
+*.orig
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+
+# ============================================================================
+# Sampah OS & editor
+# ============================================================================
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
